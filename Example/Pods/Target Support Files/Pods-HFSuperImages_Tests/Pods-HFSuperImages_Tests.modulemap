@@ -1,0 +1,6 @@
+framework module Pods_HFSuperImages_Tests {
+  umbrella header "Pods-HFSuperImages_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
