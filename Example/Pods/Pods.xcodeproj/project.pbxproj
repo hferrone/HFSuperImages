@@ -13,7 +13,7 @@
 		29990A3CF5E1F0DDBFFFCC05DE05B07B /* Pods-HFSuperImages_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCC96A962E142D72EC919CFC8DA10B /* Pods-HFSuperImages_Tests-dummy.m */; };
 		38112915738FF9E261A201E8186B41FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		5DBAA19AD3ED2F2B88DFBB994A634716 /* Pods-HFSuperImages_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E430E74D0A8D62615D32B68C820D2655 /* Pods-HFSuperImages_Example-dummy.m */; };
-		9113446365CE773AD124F2E186F6DD4D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCCEEB60E6E6838A1CBDF05BDBD1D2B /* ReplaceMe.swift */; };
+		8F2C8EFC1FB73F6A00660B0D /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C8EFB1FB73F6A00660B0D /* UIImageViewExtensions.swift */; };
 		9B94B4B5A7C1E4321AE3E0C4335ECCEA /* HFSuperImages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3431C6642562D79C7E52BA41DAEB954 /* HFSuperImages-dummy.m */; };
 		A36BA968C5D40280C9CBF495503027FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B84854B9BFBACA67BBBBDCEE8D4FD984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -38,7 +38,6 @@
 		2FC50C3212002958A3F0328B0A25DE85 /* HFSuperImages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFSuperImages.xcconfig; sourceTree = "<group>"; };
 		47FC0C4D81E9BB93694BC7DB34D72DA3 /* Pods_HFSuperImages_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFSuperImages_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F15C9C29E258351529F8E094080435C /* Pods-HFSuperImages_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HFSuperImages_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4FCCEEB60E6E6838A1CBDF05BDBD1D2B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HFSuperImages/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		5007348B0832044495EBB29EB92E2A21 /* Pods-HFSuperImages_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFSuperImages_Example.release.xcconfig"; sourceTree = "<group>"; };
 		535405A6E3BCE4307748235AD11F550E /* Pods-HFSuperImages_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFSuperImages_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		62B687FF169C7895C51F47D0F3801073 /* Pods-HFSuperImages_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HFSuperImages_Example.modulemap"; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		86731CF4D6C3717D72BCE26419C23C45 /* HFSuperImages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HFSuperImages.modulemap; sourceTree = "<group>"; };
 		88102C4996878898FE4A62CE8CE809CA /* HFSuperImages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFSuperImages-umbrella.h"; sourceTree = "<group>"; };
 		8AD1D3CF8B466C22A1EB9CE1E8948753 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F2C8EFB1FB73F6A00660B0D /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = HFSuperImages/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9477ED269C3F2DF336EF19B3080E45C2 /* Pods-HFSuperImages_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HFSuperImages_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A6A9AC7E6D2D6DCCFE433D75FACD3F53 /* Pods-HFSuperImages_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HFSuperImages_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		7A7131C72468D91A8021183F471448B8 /* HFSuperImages */ = {
 			isa = PBXGroup;
 			children = (
-				4FCCEEB60E6E6838A1CBDF05BDBD1D2B /* ReplaceMe.swift */,
 				678A35ABB919345276F3FB07871CCB8F /* Support Files */,
+				8F2C8EFB1FB73F6A00660B0D /* UIImageViewExtensions.swift */,
 			);
 			name = HFSuperImages;
 			path = ../..;
@@ -296,6 +296,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					183B9D221C370D4413B667A7A11E9E5D = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -337,8 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2C8EFC1FB73F6A00660B0D /* UIImageViewExtensions.swift in Sources */,
 				9B94B4B5A7C1E4321AE3E0C4335ECCEA /* HFSuperImages-dummy.m in Sources */,
-				9113446365CE773AD124F2E186F6DD4D /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FC50C3212002958A3F0328B0A25DE85 /* HFSuperImages.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -449,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FC50C3212002958A3F0328B0A25DE85 /* HFSuperImages.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -8,17 +8,22 @@
 
 import UIKit
 
+// Step 1: Don't forget to import the pod!
+import HFSuperImages
+
 class ViewController: UIViewController {
 
+    // Step 2: Declare or connet an image view. Be sure to set the width/height constraints to the same value.
+    @IBOutlet weak var testImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Step 3: Call the roundViewWith method on your image view.
+        testImageView.roundViewWith(borderColor: UIColor.white, borderWidth: 5.0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
+
+
+
 
